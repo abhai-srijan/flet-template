@@ -92,7 +92,7 @@ class ProcessNewRecord:
 
         body = Container(
             ref=self.upload_button,
-            content=ElevatedButton("Upload", on_click=self.upload_files),
+            content=ElevatedButton("Upload", on_click=self.upload_files,icon=icons.UPLOAD_FILE),
             alignment=alignment.center,
             disabled=True,
         )
