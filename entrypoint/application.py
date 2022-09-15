@@ -1,4 +1,3 @@
-
 import flet
 from flet import Page
 
@@ -21,4 +20,4 @@ def main(page: Page):
     page.go(page.route)
 
 
-flet.app(target=main)
+flet.app(target=main, upload_dir="assest")

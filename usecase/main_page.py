@@ -2,8 +2,7 @@ from flet import Container, Text, alignment, colors, Page, Row
 
 
 class LoadMainPage:
-
-    def __init__(self,page:Page):
+    def __init__(self, page: Page):
         self.page = page
 
     def load_layout(self):
@@ -32,5 +31,7 @@ class LoadMainPage:
             ink=True,
             on_click=lambda e: self.page.go("/process_existing_record"),
         )
-        return Row([load_new_record, load_existing_record], alignment="center", )
-
+        return Row(
+            [load_new_record, load_existing_record],
+            alignment="center",
+        )
